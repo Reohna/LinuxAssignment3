@@ -66,13 +66,13 @@ Re-type your password
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
-## Connect to your droplet with your new user
+### Step 5: Connect to your derver with your new user
 
 ```ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP```
 
 
 
-## Stop your root user from logging in with ssh
+### Step 6: Stop your root user from logging in with ssh
 
 ```Sudo vim sshd_config```
 
