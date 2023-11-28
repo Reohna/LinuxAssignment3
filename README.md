@@ -31,6 +31,12 @@ the root user's ability to ssh connect to the server.
 
 ### Step 1: Make a new regular user
 
+useradd will create a new user with the /bin/bash directory
+
+-m will create the user's home directory and copy default files to it 
+
+-s specifies the login shell for the user: /bin/bash
+
 ```useradd -ms /bin/bash <user-name>```
 
 
