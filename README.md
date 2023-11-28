@@ -49,7 +49,7 @@ Sudo cp -r /root/.ssh /home/<user-name>
 
 Sudo chown -R <user-name>:<user-group> /home/bob/.ssh
 
-  Cd /home/<user-name>
+    Cd /home/<user-name>
 
 How to connect to your ssh as your new user
 
