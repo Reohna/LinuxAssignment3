@@ -56,19 +56,23 @@ Give admin power to your new user
 
 ## Connect to your droplet with your new user
 
-ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP
+```ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP```
 
 
 ## Stop your root user from logging in with ssh
 
-Sudo vim sshd_config
+```Sudo vim sshd_config```
 
 Find “PermitRootLogin” and type “no” after it, separated by a space
 Example: “PermitRootLogin no”
 
-Sudo systemctl restart ssh.service
+## Restart your ssh.service before testing your root user logging in
+
+```Sudo systemctl restart ssh.service```
 
 Test that your root user cannot login:
+
+## Try to connect to your droplet with root
 
 ssh -i .ssh/<key-name> root@Your_Droplet_IP
 
