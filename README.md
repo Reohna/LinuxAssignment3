@@ -102,6 +102,6 @@ Test that your root user cannot login:
 You will receive a message:
 root@your-droplet-ip: Permission denied (publickey)
 
-If you received the message above, you have completed the first part of the tutorial. 
+**If you received the message above, you have completed the first part of the tutorial**
 
-Congratulations, your server is secure!
+**Congratulations, your server is secure!**
