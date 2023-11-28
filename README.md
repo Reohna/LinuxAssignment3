@@ -31,6 +31,8 @@ the root user's ability to ssh connect to the server.
 
 ### Step 1: Make a new regular user
 
+In this step, we will create a new regular user. This user will not have administrative permissions yet.
+
 useradd will create a new user 
 
 -m will create the user's home directory and copy default files to it 
@@ -41,6 +43,8 @@ useradd will create a new user
 
 
 ### Step 2: Create a password for your user
+
+In this step, we will add a password to the new user that you have just created.
 
 ```passwd <user-name>```
 
