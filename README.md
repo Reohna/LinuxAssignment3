@@ -35,7 +35,7 @@ In this step, we will create a new regular user. This user will not have adminis
 
 ```useradd -ms /bin/bash <user-name>```
 
-*useradd will create a new user*
+*-useradd will create a new user*
 
 *-m will create the user's home directory and copy default files to it*
 
@@ -114,4 +114,4 @@ root@your-droplet-ip: Permission denied (publickey)
 
 **If you received the message above, you have completed the first part of the tutorial**
 
-**Congratulations, your server is secure!**
+**Congratulations, you are able to login with your new user and your server is secured!**
