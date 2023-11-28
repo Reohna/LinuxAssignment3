@@ -17,7 +17,7 @@ Prevent the root user from connecting to the server via SSH
 Install nginx
 Configure nginx to serve a sample website
 
-***Please* Replace all placeholders ```<>``` with your own IP, username, group name, key name**
+***Please* Replace all placeholders ```example. <user-name>``` with your own IP, username, group name, key name**
 
 
 ## How to create a new user with administrative permissions
