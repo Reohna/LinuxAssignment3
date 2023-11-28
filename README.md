@@ -22,9 +22,9 @@ Configure nginx to serve a sample website
 
 ## How to create a new user with administrative permissions
 
-In this section, we will create a new user with administrative permissions.
+In this section, we will create a new user with administrative permissions. We will also give the new user the ability to connect to the server with ssh and remove 
 
-We will also give the new user the ability to connect to the server with ssh and remove the root user's ability to ssh connect to the server.
+the root user's ability to ssh connect to the server.
 
 ***It is important to not use the root user for daily tasks and removing it is a great safety measure***
 
@@ -57,7 +57,7 @@ Re-type your password
 
 In this step, we will allow the user the connect to the server with ssh. You will need to copy the /root/.ssh file to your home directory and
 
-change the user and group owner to your home directory's .ssh to your user
+change the user and group owner of your home directory's .ssh to your user
 
 #### Copy the /root/.ssh folder to your user home directory
 
