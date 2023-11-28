@@ -33,13 +33,13 @@ the root user's ability to ssh connect to the server.
 
 In this step, we will create a new regular user. This user will not have administrative permissions yet.
 
+```useradd -ms /bin/bash <user-name>```
+
 *useradd will create a new user*
 
 *-m will create the user's home directory and copy default files to it*
 
 *-s specifies the login shell for the user: /bin/bash*
-
-```useradd -ms /bin/bash <user-name>```
 
 
 ### Step 2: Create a password for your user
