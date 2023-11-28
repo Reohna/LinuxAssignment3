@@ -18,7 +18,9 @@ Configure nginx to serve a sample website
 
 <h2>How to create a new user</h2>
 
-Useradd -ms /bin/bash <user-name>
+<h3>Make a new user</h3>
+
+  ```Useradd -ms /bin/bash <user-name>```
 
 Passwd <user-name> 
 
