@@ -28,14 +28,15 @@ the root user's ability to ssh connect to the server.
 
 ***It is important to not use the root user for daily tasks and removing it is a great safety measure***
 
+
 ### Step 1: Make a new regular user
 
 ```Useradd -ms /bin/bash <user-name>```
 
+
 ### Step 2: Create a password for your user
 
 ```Passwd <user-name>```
-
 
 You will be prompted with “New password:”
 
@@ -52,7 +53,6 @@ Re-type your password
 ```Usermod -aG sudo <user-name>```
 
 
-
 ### Step 4: Make it possible for your new user to access the server with SSH
 
 In this step, we will allow the user the connect to the server with ssh. You will need to copy the /root/.ssh file to your home directory and
@@ -62,7 +62,6 @@ change the user and group owner of your home directory's .ssh to your user
 #### Copy the /root/.ssh folder to your user home directory
 
 ```Sudo cp -r /root/.ssh /home/<user-name>```
-
 
 #### Change the owner of your new ssh file in your home directory
 
@@ -76,12 +75,12 @@ After setting up your new user and adding the ssh file to your home directory. T
 ```ssh -i .ssh/<key-name> <user-name>@<Your_server_IP>```
 
 
-
 ### Step 6: Stop your root user from logging in with ssh
 
 ```Sudo vim sshd_config```
 
 Find “PermitRootLogin” and type “no” after it, separated by a space
+
 Example: “PermitRootLogin no”
 
 
