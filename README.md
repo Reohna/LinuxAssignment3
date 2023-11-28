@@ -55,6 +55,9 @@ Re-type your password
 
 ### Step 4: Make it possible for your new user to access the server with SSH
 
+In this step, we will allow the user the connect to the server with ssh. You will need to copy the /root/.ssh file to your home directory and
+
+change the user and group owner to your home directory's .ssh to your user
 
 #### Copy the /root/.ssh folder to your user home directory
 
