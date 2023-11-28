@@ -74,7 +74,7 @@ Test that your root user cannot login:
 
 ## Try to connect to your droplet with root
 
-ssh -i .ssh/<key-name> root@Your_Droplet_IP
+```ssh -i .ssh/<key-name> root@Your_Droplet_IP```
 
 You will receive a message:
 root@your-droplet-ip: Permission denied (publickey)
