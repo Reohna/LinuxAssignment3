@@ -1,4 +1,4 @@
-# Beginner Tutorial
+# Tutorial: How to create a new admin and setup nginx
 
 
 This is a tutorial that would guide you through the following steps.
