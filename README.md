@@ -17,7 +17,7 @@ Prevent the root user from connecting to the server via SSH
 Install nginx
 Configure nginx to serve a sample website
 
-**Information in the < and > signs are placeholders for your own personalization**
+**Information in the "<" and ">" signs are placeholders for your own personalization**
 
 ## How to create a regular user
 
