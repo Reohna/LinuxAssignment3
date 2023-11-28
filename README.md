@@ -66,9 +66,11 @@ Re-type your password
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
-### Step 5: Connect to your derver with your new user
+### Step 5: Connect to your server with your new user
 
-```ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP```
+After setting up your new user and adding the ssh file to your home directory. The following command will allow you to connect to your new server with your new user:
+
+```ssh -i .ssh/<key-name> <user-name>@<Your_server_IP>```
 
 
 
