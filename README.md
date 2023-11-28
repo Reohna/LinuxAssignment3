@@ -58,8 +58,7 @@ Re-type your password
 ### Change the owner of your new ssh file in your home directory
 
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
-.
-.
+
 
 ## Connect to your droplet with your new user
 
@@ -81,6 +80,7 @@ Example: “PermitRootLogin no”
 ```Sudo systemctl restart ssh.service```
 
 Test that your root user cannot login:
+
 
 
 
