@@ -18,11 +18,14 @@ Configure nginx to serve a sample website
 
 <h2>How to create a new user</h2>
 
+
 <h3>Make a new user</h3>
 
-  ```Useradd -ms /bin/bash <user-name>```
+```Useradd -ms /bin/bash <user-name>```
 
-Passwd <user-name> 
+<h3>Create a password for your user</h3>
+
+```Passwd <user-name>```
 
 
 You will be prompted with “New password:”
@@ -31,7 +34,7 @@ Type your password
 
 You will be prompted with “Retype new password:”
 
-Re-type your password from before
+Re-type your password 
 
 Give admin power to your new user
 
