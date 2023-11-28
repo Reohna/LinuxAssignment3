@@ -1,3 +1,5 @@
+<h1>Beginner Tutorial</h1>
+
 Write a tutorial that would guide the reader through the following steps.
 
 Starting from a Fresh Debian 12 server on digitalocean
