@@ -1,7 +1,7 @@
 # Beginner Tutorial
 
 
-This is a tutorial that would guide the reader through the following steps.
+This is a tutorial that would guide you through the following steps.
 
 Starting from a Fresh Debian 12 server on digitalocean
 Create a new regular user:
@@ -18,7 +18,7 @@ Install nginx
 Configure nginx to serve a sample website
 
 
-## How to create a new user
+## How to create a regular user
 
 
 ### Make a new user
@@ -38,14 +38,12 @@ You will be prompted with “Retype new password:”
 
 Re-type your password 
 
-## How to give admin power to an user
-
-Give admin power to your new user
+## How to give administrative tasks to an user
 
 ```Usermod -aG sudo <user-name>```
 
 
-## Make it possible for your new user to connect to the server via SSH
+## Make it possible for your new user to access the server with SSH
 
 ### Copy the /root/.ssh folder to your user home directory
 
