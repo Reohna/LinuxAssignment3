@@ -114,4 +114,4 @@ root@your-droplet-ip: Permission denied (publickey)
 
 **If you received the message above, you have completed the first part of the tutorial**
 
-### **Congratulations, you are able to login with your new user and your server is secured!**
+### **Congratulations, you are now able to login with your new user and your server is secured!**
