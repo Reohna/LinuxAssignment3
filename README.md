@@ -1,4 +1,4 @@
-# Tutorial: How to create a new admin and setup nginx
+# Tutorial: How to connect to a droplet with a new user, remove root from ssh login, and setup nginx
 
 
 This is a tutorial that would guide you through the following steps.
@@ -19,14 +19,14 @@ Configure nginx to serve a sample website
 
 **Information in the "<" ">" signs are placeholders for your own personalization**
 
-## How to create a regular user
+## How to create a new user with administrative permissions
 
 
-### Make a new user
+### Step 1: Make a new regular user
 
 ```Useradd -ms /bin/bash <user-name>```
 
-### Create a password for your user
+### Step 2: Create a password for your user
 
 ```Passwd <user-name>```
 
@@ -41,21 +41,21 @@ Re-type your password
 
 
 
-## How to give administrative tasks to an user
+### Step 3: Give the user administrative permissions
 
 ```Usermod -aG sudo <user-name>```
 
 
 
-## Make it possible for your new user to access the server with SSH
+### Step 4: Make it possible for your new user to access the server with SSH
 
 
-### Copy the /root/.ssh folder to your user home directory
+#### Copy the /root/.ssh folder to your user home directory
 
 ```Sudo cp -r /root/.ssh /home/<user-name>```
 
 
-### Change the owner of your new ssh file in your home directory
+#### Change the owner of your new ssh file in your home directory
 
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
