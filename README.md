@@ -39,12 +39,12 @@ the root user's ability to ssh connect to the server.
 ```passwd <user-name>```
 
 >You will be prompted with “New password:”
-
->*Type your desired password*
-
+>
+>>*Type your desired password*
+>
 >You will be prompted with “Retype new password:”
-
->*Re-type your password*
+>
+>>*Re-type your password*
 
 
 
