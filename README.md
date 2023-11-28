@@ -36,17 +36,20 @@ You will be prompted with “Retype new password:”
 
 Re-type your password 
 
+<h2>How to give admin power to an user</h2>
+
 Give admin power to your new user
 
-Usermod -aG sudo <user-name>
+```Usermod -aG sudo <user-name>```
 
-Make it possible for your new user to connect to the server via SSH
+
+<h2>Make it possible for your new user to connect to the server via SSH</h2>
 
 Sudo cp -r /root/.ssh /home/<user-name>
 
 Sudo chown -R <user-name>:<user-group> /home/bob/.ssh
 
-Cd /home/<user-name>
+  Cd /home/<user-name>
 
 How to connect to your ssh as your new user
 
