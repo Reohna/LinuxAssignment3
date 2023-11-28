@@ -54,15 +54,12 @@ Give admin power to your new user
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
-## How to connect to your ssh as your new user
-
 ## Connect to your droplet with your new user
 
 ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP
 
-## Stop your root user from logging in with ssh
 
-How to remove root user from logging into the ssh
+## Stop your root user from logging in with ssh
 
 Sudo vim sshd_config
 
