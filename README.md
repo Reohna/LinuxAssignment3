@@ -49,15 +49,18 @@ Give admin power to your new user
 
 ```Sudo cp -r /root/.ssh /home/<user-name>```
 
-### Change the owner of your /home/user-name
+### Change the owner of your new ssh file in your home directory
 
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
-How to connect to your ssh as your new user
+## How to connect to your ssh as your new user
+
+## Connect to your droplet with your new user
 
 ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP
 
+## Stop your root user from logging in with ssh
 
 How to remove root user from logging into the ssh
 
