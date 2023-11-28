@@ -1,6 +1,5 @@
 <h1>Beginner Tutorial</h1>
 
-************************************************************************************************************
 
 Write a tutorial that would guide the reader through the following steps.
 
@@ -16,7 +15,6 @@ Prevent the root user from connecting to the server via SSH
 Install nginx
 Configure nginx to serve a sample website
 
-************************************************************************************************************
 
 <h2>How to create a new user</h2>
 
