@@ -18,6 +18,7 @@ Install nginx
 Configure nginx to serve a sample website
 
 
+
 ## How to create a regular user
 
 
@@ -38,25 +39,32 @@ You will be prompted with “Retype new password:”
 
 Re-type your password 
 
+
+
 ## How to give administrative tasks to an user
 
 ```Usermod -aG sudo <user-name>```
 
 
+
 ## Make it possible for your new user to access the server with SSH
+
 
 ### Copy the /root/.ssh folder to your user home directory
 
 ```Sudo cp -r /root/.ssh /home/<user-name>```
+
 
 ### Change the owner of your new ssh file in your home directory
 
 ```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
+
 ## Connect to your droplet with your new user
 
 ```ssh -i .ssh/<key-name> <user-name>@Your_Droplet_IP```
+
 
 
 ## Stop your root user from logging in with ssh
@@ -66,11 +74,15 @@ Re-type your password
 Find “PermitRootLogin” and type “no” after it, separated by a space
 Example: “PermitRootLogin no”
 
+
+
 ## Restart your ssh.service before testing your root user logging in
 
 ```Sudo systemctl restart ssh.service```
 
 Test that your root user cannot login:
+
+
 
 ## Try to connect to your droplet with root
 
