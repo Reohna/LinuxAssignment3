@@ -1,4 +1,4 @@
-<h1>Beginner Tutorial</h1>
+# Beginner Tutorial
 
 
 Write a tutorial that would guide the reader through the following steps.
@@ -16,14 +16,14 @@ Install nginx
 Configure nginx to serve a sample website
 
 
-<h2>How to create a new user</h2>
+## How to create a new user
 
 
-<h3>Make a new user</h3>
+### Make a new user
 
 ```Useradd -ms /bin/bash <user-name>```
 
-<h3>Create a password for your user</h3>
+### Create a password for your user
 
 ```Passwd <user-name>```
 
@@ -36,22 +36,22 @@ You will be prompted with “Retype new password:”
 
 Re-type your password 
 
-<h2>How to give admin power to an user</h2>
+## How to give admin power to an user
 
 Give admin power to your new user
 
 ```Usermod -aG sudo <user-name>```
 
 
-<h2>Make it possible for your new user to connect to the server via SSH</h2>
+## Make it possible for your new user to connect to the server via SSH
 
-<h3>Copy the /root/.ssh folder to your user home directory</h3>
+### Copy the /root/.ssh folder to your user home directory
 
 ```Sudo cp -r /root/.ssh /home/<user-name>```
 
-<h3>Change the owner of /home/<user-name>/.ssh to <user-name>:<user-group></h3>
+### Change the owner of your /home/user-name
 
-Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh
+```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
 How to connect to your ssh as your new user
