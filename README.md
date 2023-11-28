@@ -85,7 +85,9 @@ Example: “PermitRootLogin no”
 
 
 
-## Restart your ssh.service before testing your root user logging in
+### Step 7: Restart your ssh.service before testing your root user 
+
+Make sure to restart your ssh.service to apply the changes made t othe sshd_config file
 
 ```Sudo systemctl restart ssh.service```
 
@@ -93,9 +95,13 @@ Test that your root user cannot login:
 
 
 
-## Try to connect to your droplet with root
+### Step 8: Try to connect to your droplet with root user
 
 ```ssh -i .ssh/<key-name> root@Your_Droplet_IP```
 
 You will receive a message:
 root@your-droplet-ip: Permission denied (publickey)
+
+If you received the message above, you have completed the first part of the tutorial. 
+
+Congratulations, your server is secure!
