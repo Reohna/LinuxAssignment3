@@ -45,11 +45,10 @@ Give admin power to your new user
 
 <h2>Make it possible for your new user to connect to the server via SSH</h2>
 
-Sudo cp -r /root/.ssh /home/<user-name>
+```Sudo cp -r /root/.ssh /home/<user-name>
 
-Sudo chown -R <user-name>:<user-group> /home/bob/.ssh
+Sudo chown -R <user-name>:<user-group> /home/bob/.ssh```
 
-    Cd /home/<user-name>
 
 How to connect to your ssh as your new user
 
