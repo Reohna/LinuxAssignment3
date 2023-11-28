@@ -31,26 +31,26 @@ the root user's ability to ssh connect to the server.
 
 ### Step 1: Make a new regular user
 
-```Useradd -ms /bin/bash <user-name>```
+```useradd -ms /bin/bash <user-name>```
 
 
 ### Step 2: Create a password for your user
 
-```Passwd <user-name>```
+```passwd <user-name>```
 
-You will be prompted with “New password:”
+>You will be prompted with “New password:”
 
-*Type your desired password*
+>*Type your desired password*
 
-You will be prompted with “Retype new password:”
+>You will be prompted with “Retype new password:”
 
-*Re-type your password*
+>*Re-type your password*
 
 
 
 ### Step 3: Give the user administrative permissions
 
-```Usermod -aG sudo <user-name>```
+```usermod -aG sudo <user-name>```
 
 
 ### Step 4: Make it possible for your new user to access the server with SSH
@@ -61,11 +61,11 @@ change the user and group owner of your home directory's .ssh to your user
 
 #### Copy the /root/.ssh folder to your user home directory
 
-```Sudo cp -r /root/.ssh /home/<user-name>```
+```sudo cp -r /root/.ssh /home/<user-name>```
 
 #### Change the owner of your new ssh file in your home directory
 
-```Sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
+```sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
 
 ### Step 5: Connect to your server with your new user
@@ -77,7 +77,7 @@ After setting up your new user and adding the ssh file to your home directory. T
 
 ### Step 6: Stop your root user from logging in with ssh
 
-```Sudo vim sshd_config```
+```sudo vim sshd_config```
 
 Find “PermitRootLogin” and type “no” after it, separated by a space
 
@@ -89,7 +89,7 @@ Example: “PermitRootLogin no”
 
 Make sure to restart your ssh.service to apply the changes made t othe sshd_config file
 
-```Sudo systemctl restart ssh.service```
+```sudo systemctl restart ssh.service```
 
 Test that your root user cannot login:
 
