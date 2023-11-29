@@ -134,7 +134,7 @@ In this step, you will create a directory in /var/www/that will store all of you
 
 Use ``` sudo vim /var/www/<directory-name>/index.html``` to create an index.html file in the directory you've made, then copy and paste the 
 
-the basic HTML layout into index.html before you ```:wq```
+the basic HTML layout into index.html before you write and quit with ```:wq```
    
     
     <!DOCTYPE html>
@@ -161,8 +161,30 @@ the basic HTML layout into index.html before you ```:wq```
     </body>
     </html>
 
+### Step 4: Creating your own server block
 
+>Create a conf file using the same name as the directory you made in /var/www/<directory-name> in ```/etc/nginx/sites-available``` by using vim /etc/nginx/sites-available/<directory-name>
+>
+>> example: if your directory is ```var/www/Example1``` do ```vim /etc/nginx/sites-available/Example1.conf```
 
+Once completed, paste the the example server block into the file:
+
+      server {
+      	listen 80 default_server;
+      	listen [::]:80 default_server;
+      	
+      	root /var/www/html;
+      	
+      	index index.html index.htm index.nginx-debian.html;
+      	
+      	server_name _;
+      	
+      	location / {
+      		# First attempt to serve request as file, then
+      		# as directory, then fall back to displaying a 404.
+      		try_files $uri $uri/ =404;
+      	}
+      }
 
 
 
