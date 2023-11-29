@@ -168,7 +168,7 @@ Create a conf file using the same name as the directory you made in /var/www/<di
 > example: if your directory is ```var/www/Example1``` do ```vim /etc/nginx/sites-available/Example1.conf```
  
 
-Once completed, paste the the example server block into the file:
+Once completed, paste the example server block into the file and edit the root path to the directory you created in /var/www/ :
 
       server {
       	listen 80 default_server;
@@ -187,6 +187,9 @@ Once completed, paste the the example server block into the file:
       	}
       }
 
+M
+
 ***Make sure to write into the file before quitting***
 
+### Step 5: M
 
