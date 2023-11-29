@@ -135,6 +135,7 @@ In this step, you will create a directory in /var/www/that will store all of you
 Use ``` sudo vim /var/www/<directory-name>/index.html``` to create an index.html file in the directory you've made, then copy and paste the 
 
 the basic HTML layout into index.html before you ```:wq```
+   
     <!DOCTYPE html>
     <html lang="en">
     <head>
