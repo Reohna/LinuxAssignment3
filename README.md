@@ -112,3 +112,56 @@ root@your-droplet-ip: Permission denied (publickey)
 **If you received the message above, you have completed the first part of the tutorial**
 
 ### **Congratulations, you are now able to login with your new user and your server is secured!**
+
+*****************************************************************************************************************************************
+
+
+## How to configure nginx to server a simple website
+
+In this section, you will install nginx and configure it to serve a simple website.
+
+### Step 1: Install nginx
+
+You can install nginx with the following command: ```sudo apt install nginx```
+
+### Step 2: Create a directory in /var/www/
+
+In this step, you will create a directory in /var/www/that will store all of your .html files
+
+```mkdir /var/www/<directory-name>```
+
+### Step 3: Make an index.html file and create the basic layout
+
+Use ``` sudo vim /var/www/<directory-name>/index.html``` to create an index.html file in the directory you've made and paste the 
+
+the basic HTML layout:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2420</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello, World</h1>
+    </body>
+    </html>
+
+
+
+
+
+
