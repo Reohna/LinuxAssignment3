@@ -167,7 +167,6 @@ the basic HTML layout into index.html before you write and quit with ```:wq```
 >
 >> example: if your directory is ```var/www/Example1``` do ```vim /etc/nginx/sites-available/Example1.conf```
 >> 
-***Make sure to write into the file before quitting***
 
 Once completed, paste the the example server block into the file:
 
@@ -188,5 +187,6 @@ Once completed, paste the the example server block into the file:
       	}
       }
 
+***Make sure to write into the file before quitting***
 
 
