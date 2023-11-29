@@ -163,10 +163,10 @@ the basic HTML layout into index.html before you write and quit with ```:wq```
 
 ### Step 4: Creating your own server block
 
->Create a conf file using the same name as the directory you made in /var/www/<directory-name> in ```/etc/nginx/sites-available``` by using ```vim /etc/nginx/sites-available/<directory-name>```
->
+Create a conf file using the same name as the directory you made in /var/www/<directory-name> in ```/etc/nginx/sites-available``` by using ```vim /etc/nginx/sites-available/<directory-name>```
+
 >> example: if your directory is ```var/www/Example1``` do ```vim /etc/nginx/sites-available/Example1.conf```
->> 
+ 
 
 Once completed, paste the the example server block into the file:
 
