@@ -122,7 +122,10 @@ In this section, you will install nginx and configure it to serve a simple websi
 
 ### Step 1: Install nginx
 
-You can install nginx with the following command: ```sudo apt install nginx```
+You can install nginx with the following command: ```sudo apt install nginx``` then test to see if nginx is working properly by using
+```curl <your-ip-address>```
+
+***If your curl has an error because its not enabled or not active, make sure to ```sudo systemctl enable nginx``` then ```sudo systemctl start nginx```***
 
 ### Step 2: Create a directory in /var/www/
 
@@ -191,5 +194,23 @@ M
 
 ***Make sure to write into the file before quitting***
 
-### Step 5: M
+### Step 5: Create a symbolic link
+
+In this step, you will ```cd to /etc/nginx/sites-enabled``` then create a symbolic link to the conf file you made with the following command: 
+
+```ln -s /etc/nginx/sites-available/<your.conf>```
+
+**Congratulations, you have created a symbolic link to your configuration file!**
+
+### Step 6: Make sure your symbolic link works
+
+Use the following command to check if your symbolic link works: ``` sudo nginx -t ```
+
+### Step 7: Restart your nginx server before curling the IP address
+
+This is the final step, if your symbolic link works, you can use ```sudo systemctl restart nginx``` then try 
+
+```curl <your-ip-address>```
+
+### If your basic HTML page displays properly, you have completed the tutorial!
 
