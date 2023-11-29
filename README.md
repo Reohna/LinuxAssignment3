@@ -31,7 +31,7 @@ the root user's ability to ssh connect to the server.
 
 ### Step 1: Make a new regular user
 
-In this step, we will create a new regular user. This user will not have administrative permissions yet.
+In this step, we will create a new regular user with bash as its shell. This user will not have administrative permissions yet.
 
 ```useradd -ms /bin/bash <user-name>```
 
