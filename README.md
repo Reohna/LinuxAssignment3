@@ -136,6 +136,7 @@ Use ``` sudo vim /var/www/<directory-name>/index.html``` to create an index.html
 
 the basic HTML layout into index.html before you ```:wq```
    
+    
     <!DOCTYPE html>
     <html lang="en">
     <head>
