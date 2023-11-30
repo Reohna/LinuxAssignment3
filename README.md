@@ -22,9 +22,7 @@ Configure nginx to serve a sample website
 
 ## How to create a new user with administrative permissions
 
-In this section, we will create a new user with administrative permissions. We will also give the new user the ability to connect to the server with ssh and remove 
-
-the root user's ability to ssh connect to the server.
+In this section, we will create a new user with administrative permissions. We will also give the new user the ability to connect to the server with ssh and remove the root user's ability to ssh connect to the server.
 
 ***It is important to not use the root user for daily tasks and removing it is a great safety measure***
 
@@ -93,11 +91,7 @@ Find “PermitRootLogin” and type “no” after it, separated by a space
 
 Example: “PermitRootLogin no”
 
-#### Congratulations, you are not able to use your new admin account! However, it is safe practice to stop allowing your root user to
-
-connect to your server. This will protect your server because all accounts have "root" accounts and it is easy for people to access your server
-
-by attempting to log into a root user vs a username you make yourself
+#### Congratulations, you are not able to use your new admin account! However, it is safe practice to stop allowing your root user to connect to your server. This will protect your server because all accounts have "root" accounts and it is easy for people to access your server by attempting to log into a root user vs a username you make yourself
 
 
 
