@@ -190,7 +190,6 @@ Once completed, paste the example server block into the file and edit the root p
       	}
       }
 
-M
 
 ***Make sure to write into the file before quitting***
 
