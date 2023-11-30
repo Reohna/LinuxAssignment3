@@ -91,7 +91,8 @@ Find “PermitRootLogin” and type “no” after it, separated by a space
 
 Example: “PermitRootLogin no”
 
-#### Congratulations, you are not able to use your new admin account! However, it is safe practice to stop allowing your root user to connect to your server. This will protect your server because all accounts have "root" accounts and it is easy for people to access your server by attempting to log into a root user vs a username you make yourself
+#### Congratulations, you are not able to use your new admin account! However, it is safe practice to stop allowing your root user to connect to your server. This will protect your server because all servers have a "root" account and it is easy for people to access your server by attempting to log into a root user vs a username you make yourself. Let's
+prevent the root user from accessing the server with ssh.
 
 
 
