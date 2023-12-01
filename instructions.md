@@ -31,7 +31,7 @@ In this section, we will create a new user with administrative permissions. We w
 
 In this step, we will create a new regular user with bash as its shell. This user will not have administrative permissions yet.
 
-The command useradd -ms /bin/bash <user-name> creates a new Linux user with the specified username, a home directory, and sets the Bash shell as their default login shell.
+The command ```useradd -ms /bin/bash <user-name>``` creates a new Linux user with the specified username, a home directory, and sets the Bash shell as their default login shell.
 
 *-useradd will create a new user*
 
