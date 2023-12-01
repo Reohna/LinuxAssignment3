@@ -33,11 +33,11 @@ In this step, we will create a new regular user with bash as its shell. This use
 
 The command ```useradd -ms /bin/bash <user-name>``` creates a new Linux user with the specified username, a home directory, and sets the Bash shell as their default login shell.
 
-*-useradd will create a new user*
+*-```useradd``` will create a new user*
 
-*-m will create the user's home directory and copy default files to it*
+*```-m``` will create the user's home directory and copy default files to it*
 
-*-s specifies the login shell for the user: /bin/bash*
+*```-s``` specifies the login shell for the user: /bin/bash*
 
 
 ### Step 2: Create a password for your user
