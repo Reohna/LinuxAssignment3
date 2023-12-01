@@ -58,7 +58,9 @@ In this step, we will add a password to the new user that you have just created.
 
 ### Step 3: Give the user administrative permissions
 
-```usermod -aG sudo <user-name>```
+The command ```usermod -aG sudo <user-name>``` is used to add a user to the "sudo" group on a Linux system. This grants the specified user administrative privileges, allowing them to execute commands with superuser (root) privileges. The -aG options stand for "append to groups," ensuring that the user is added to the "sudo" group without affecting their membership in other groups. Replace <user-name> with the actual username of the user you want to grant sudo access to. After running this command, the user will be able to use the sudo command to perform administrative tasks on the system.
+
+
 
 
 ### Step 4: Make it possible for your new user to access the server with SSH
