@@ -128,7 +128,7 @@ You can install nginx with the following command: ```sudo apt install nginx``` t
 
 *The command ```sudo systemctl enable nginx``` is used to enable the Nginx web server to start automatically on system boot. When the command is executed with sudo for superuser privileges, it creates symbolic links or units to include Nginx in the list of services that should start during the system's boot process. This ensures that Nginx will automatically launch whenever the system is restarted or powered on.*
 
-*The command ```sudo systemctl start nginx``` initiates the Nginx web server, immediately starting its services.
+*The command ```sudo systemctl start nginx``` initiates the Nginx web server, immediately starting its services.*
 
 ### Step 2: Create a directory in /var/www/
 
