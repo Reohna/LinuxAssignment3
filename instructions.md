@@ -81,14 +81,12 @@ The command ```sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh``` 
 
 After setting up your new user and adding the ssh file to your home directory. The following command will allow you to connect to your new server with your new user:
 
-```ssh -i .ssh/<key-name> <user-name>@<Your_server_IP>```
+To connect to a server using SSH, run ```ssh -i .ssh/<key-name> <user-name>@<Your_server_IP>``` replacing <key-name>, <user-name>, and <Your_server_IP> with the appropriate values.
 
 
 ### Step 6: Stop your root user from logging in with ssh
 
-```sudo vim sshd_config```
-
-Find “PermitRootLogin” and type “no” after it, separated by a space
+To stop your root user from using ssh to connect to your server, you will have to edit the SSH daemon configuration file, by using ```sudo vim sshd_config``` then find “PermitRootLogin” and type “no” after it, separated by a space.
 
 Example: “PermitRootLogin no”
 
@@ -100,15 +98,15 @@ Example: “PermitRootLogin no”
 
 Make sure to restart your ssh.service to apply the changes made to the sshd_config file, by using 
 
-```sudo systemctl restart ssh.service```
+This command ```sudo systemctl restart ssh.service``` restarts the SSH (Secure Shell) service on a Linux system using the systemd init system, applying any configuration changes made to the SSH service without requiring a full system restart
 
 
 ### Step 8: Test logging in with your root user
 
-```ssh -i .ssh/<key-name> root@Your_Droplet_IP```
+ Connect to a server (Droplet) as the root user using SSH with the command ```ssh -i .ssh/<key-name> root@Your_Droplet_IP```
 
 If everything has been done correctly, you should see this message:
-root@your-droplet-ip: Permission denied (publickey)
+```root@your-droplet-ip: Permission denied (publickey)```
 
 **If you received the message above, you have completed the first part of the tutorial**
 
@@ -126,17 +124,21 @@ In this section, you will install nginx and configure it to serve a simple websi
 You can install nginx with the following command: ```sudo apt install nginx``` then test to see if nginx is working properly by using
 ```curl <your-ip-address>```
 
-***If your curl has an error because its not enabled or not active, make sure to ```sudo systemctl enable nginx``` then ```sudo systemctl start nginx```***
+***If your curl has an error because it's not enabled or not active, make sure to ```sudo systemctl enable nginx``` then ```sudo systemctl start nginx```***
+
+*The command sudo systemctl enable nginx is used to enable the Nginx web server to start automatically on system boot. When the command is executed with sudo for superuser privileges, it creates symbolic links or units to include Nginx in the list of services that should start during the system's boot process. This ensures that Nginx will automatically launch whenever the system is restarted or powered on.*
+
+*The command sudo systemctl start nginx initiates the Nginx web server, immediately starting its services. This is useful for manually launching Nginx without requiring a reboot, ensuring the web server is active and serving content.*
 
 ### Step 2: Create a directory in /var/www/
 
 In this step, you will create a directory in /var/www/that will store all of your .html files
 
-```mkdir /var/www/<directory-name>```
+The command ```mkdir /var/www/<directory-name>``` creates a new directory with the specified name within the /var/www/ directory path on a Linux system. This is where website or application files are often stored. 
 
 ### Step 3: Make an index.html file and create the basic layout
 
-Use ``` sudo vim /var/www/<directory-name>/index.html``` to create an index.html file in the directory you've made, then copy and paste the 
+Use ```sudo vim /var/www/<directory-name>/index.html``` to create an index.html file in the directory you've made, then copy and paste the 
 
 the basic HTML layout into index.html before you write and quit with ```:wq```
    
