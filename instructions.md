@@ -17,7 +17,7 @@ Prevent the root user from connecting to the server via SSH
 Install nginx
 Configure nginx to serve a sample website
 
-***Please* Replace all placeholders ```example. <user-name>``` with your own IP, username, group name, key name**
+***Please* Replace all placeholders ```example. <user-name>``` with your IP, username, group name, key name**
 
 
 ## How to create a new user with administrative permissions
@@ -31,7 +31,7 @@ In this section, we will create a new user with administrative permissions. We w
 
 In this step, we will create a new regular user with bash as its shell. This user will not have administrative permissions yet.
 
-```useradd -ms /bin/bash <user-name>```
+The command useradd -ms /bin/bash <user-name> creates a new Linux user with the specified username, a home directory, and sets the Bash shell as their default login shell.
 
 *-useradd will create a new user*
 
@@ -44,7 +44,7 @@ In this step, we will create a new regular user with bash as its shell. This use
 
 In this step, we will add a password to the new user that you have just created.
 
-```passwd <user-name>```
+The command ```passwd <user-name>``` is used to change the password for a specified user on Linux. Simply replace <user-name> with the desired username when prompted.
 
 >You will be prompted with “New password:”
 >
@@ -71,12 +71,11 @@ change the user and group owner of your home directory's .ssh to your user
 
 #### Copy the /root/.ssh folder to your user home directory
 
-```sudo cp -r /root/.ssh /home/<user-name>```
+The command ```sudo cp -r /root/.ssh /home/<user-name>``` copies the SSH configuration directory from the root user's home directory to the home directory of the specified user, ensuring they have access to the necessary SSH settings.
 
 #### Change the owner of your new ssh file in your home directory
 
-```sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
-
+The command ```sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh``` changes the ownership of the ".ssh" directory and its contents in the specified user's home directory, ensuring that both the user and their designated group have the appropriate permissions for SSH-related files. 
 
 ### Step 5: Connect to your server with your new user
 
